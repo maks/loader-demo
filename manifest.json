@@ -1,0 +1,26 @@
+{
+  "name": "Loader Demo",
+  "description": "Loader Demo as Chrome App",
+  "version": "0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "25.0",
+  "offline_enabled": true,
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "http://*/",
+    {"socket": [
+      "tcp-connect:*:*"
+    ]},
+    {
+        "fileSystem": ["write"]
+    }
+  ]
+}

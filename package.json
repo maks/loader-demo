@@ -1,0 +1,16 @@
+{
+  "name": "loader-demo",
+  "version": "0.0.1",
+  "description": "module loader demo app",
+  "main": "index.js",
+  "repository": "",
+  "author": "Maksim Lin",
+  "license": "BSD",
+  "dependencies": {
+    "chrome-app-module-loader" : "",
+    "min-stream-chrome" : "",
+    "min-stream-pkt-line" : "",
+    "min-stream-helpers" : "",
+    "bops" : ""      
+  }
+}
