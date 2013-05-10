@@ -29,9 +29,9 @@ __Note:__ in this simple case, all the background script does is add a listener 
 
 ### Using the Module Loader
 
-Finally the crux of this guide, the index.html page makes use of the loader to load the dependencies of the main js code and the loader will also recurse through and load the dependencies of the dependencies etc.
+Finally the crux of this guide, the [index.html](index.html) page makes use of the loader to load the dependencies of the main js code and the loader will also recurse through and load the dependencies of the dependencies etc.
 
-The single html <script> elem points to the location of the module loader js and uses the ```autorequire``` attribute to point to the
+The single html ```script``` element points to the location of the module loader js and uses the ```autorequire``` attribute to point to the
 main (aka index.js) of the top-level code module you are using.
 
 In this case its [ls-demo.js](ls-demo.js) which then has the normal requires you would use in Nodejs.
