@@ -22,9 +22,9 @@ Chrome apps need a manifest.json where they declare the permissions they require
 
 The keypoints of the example included in this gist are:
 * the background scripts array defines the scripts that will be run when the app is running
-* the socket permission gives the app use of the raw tcp sockets api (**no** x-origin security policy applies!)
+* the socket permission gives the app use of the raw tcp sockets api (*no* x-origin security policy applies!)
 
-__Note:__ in this simple case, all the background script does is add a listener for the app being launched that will then open a new window with index.html
+__Note:__ in this simple case, all the background script does is add a listener for the app being launched that will then open a new window with [index.html](index.html)
 
 
 ### Using the Module Loader
