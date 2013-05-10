@@ -18,7 +18,7 @@ extension entry.
 
 ### Chrome App Manifest
 
-Chrome apps need a manifest.json where they declare the permissions they require as well as other metadata about the app.
+Chrome apps need a [manifest.json](manifest.json) where they declare the permissions they require as well as other metadata about the app.
 
 The keypoints of the example included in this gist are:
 * the background scripts array defines the scripts that will be run when the app is running
@@ -33,7 +33,8 @@ Finally the crux of this guide, the index.html page makes use of the loader to l
 
 The single html <script> elem points to the location of the module loader js and uses the ```autorequire``` attribute to point to the
 main (aka index.js) of the top-level code module you are using.
-In this case its ls-demo.js which then has the normal requires you would use in Nodejs.
+
+In this case its [ls-demo.js](ls-demo.js) which then has the normal requires you would use in Nodejs.
 
 For this demo, I declared all the dependencies in package.json, __including the loader module itself__ and used npm to install them all in node_modules folder.
 
